@@ -1,0 +1,74 @@
+:imagesdir: ./images
+:toc: macro
+
+= Intro to Sensors
+
+== License
+
+The materials for this document are licensed under the Apache license. See the file LICENSE for details.
+
+Copyright 2016 M Rose & F Douthit
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+toc::[]
+
+== Overview
+Sensors are used every day to inform computers of real world events.
+
+== Event Title:
+Sensors for Robots and more
+
+Sensors for Robots and Everyday use.
+
+
+== Topics
+- Sensors
+- Sensor calibration and filtering, 
+- sensor fusion, 
+- use of GPS, 
+- use of IMUs, 
+- HC-SR04 ultrasonic sensors ($1.50 from one of my favorite suppliers - even - cheaper from China).
+- IR sensors
+- I2C to talk to a compass or IMU - Compass-only boards are pretty cheap, know of one for $6.
+- How to talk to multiple types of sensors, taking turns using each sensor
+- Sensor filtering and data integrity strategy
+- Advanced concepts would be sensor variance and covariance, also noise. (E.g., noise introduced by the robot.)
+- PID controller/wheel encoder
+- Kalman filters, e.g., along with variance discussion.
+- PIR
+- How to rig a collision detector using spring wire and screws (ultra-cheapo bump detection).
+(Wire bends when you hit something, causing it to touch a screw that closes a circuit read by a digital input.)
+
+- Using interrupts to read ultrasonic sensor, as opposed to pulseIn(), which will be confused if you use interrupts for anything else, such as wheel encoders.
+- Talk about speed of analog reads vs. digital reads, maybe use of pull-up and pull-down resistors.
+- An optical component that can read white/black differences - poor-man's wheel encoder. Kind of shows everything: use of resistor to limit current through an LED, use of pull-up resistor for a phototransistor, reading either analog or digital or interrupt.
+
+
+== Programming & Linux OS
+- OpenCV
+- Networking in Linux
+- Basic Linux shell 
+- Command usage
+- Linux shell scripting
+
+== ROS and Robotics
+- Robot localization/mapping/SLAM, 
+- robot kinematics
+- SMACH
+
+== Logistics
+Approximately 1-1.5 hours
+
+
+
+
