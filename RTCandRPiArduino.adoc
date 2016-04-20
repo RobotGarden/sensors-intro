@@ -1,0 +1,91 @@
+:imagesdir: ./images
+:toc: macro
+
+= Intro to Real Time Clock (RTC) and Raspberry Pi and Arduino
+
+== License
+
+The materials for this document are licensed under the Apache license. See the file LICENSE for details.
+
+Copyright 2016 F Douthit
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+toc::[]
+
+
+== Overview
+
+A real time clock keeps track of the current time for a computer. By current time I mean the time on a wall clock. 
+This might seem strange to you since your PC already does that. Don't all computers? The answer is no. If you had experience with earlier desktop computers you may have had to replace the clock battery. That clock was the PC's real time clock.
+
+An RTC keeps time while the computer is not powered. It typically sips power, so that the computer can be unpowered for a long time and when powered on has the correct time.
+
+Having an RTC means the computer doesn't have to concern itself with clock tasks, freeing it to do other things.
+
+[NOTE]
+In particular, single board hobby PCs like the Raspberry Pi and Arduino do not include a real time clock. For some applications this is OK. Some features require the current time, such as networking.
+
+
+== Materials and Tools
+
+=== Materials
+
+- link:http://smile.amazon.com/JBtek-DS3231-Clock-Module-Raspberry/dp/B00ZOZUTMU[JBtek DS3231 Clock Module for Raspberry Pi]
+
+- Bread Board and Jumper Wires
+
+- Raspberry Pi 2 or 3
+
+- 32GB SDCard of Raspberry Pi 2 image.
+
+=== Tools
+
+
+
+== Datasheet
+A data sheet, for our purposes here, documents in a concise manner the features and capabilities of a component.
+
+This is link:DataSheet/Maxim/DS3231.pdf[the Datasheet for the DS3231].
+
+
+== Wiring The Electronics
+
+=== Arduino
+
+
+=== Raspberry Pi
+
+
+
+== Software
+
+=== Arduino
+
+
+=== Raspberry Pi
+
+
+
+== Testing
+
+=== Arduino
+
+
+=== Raspberry Pi
+
+
+
+
+== Reference
+
+- link:https://rtc.codeplex.com/SourceControl/latest[DS3231 RTC coding examples]
