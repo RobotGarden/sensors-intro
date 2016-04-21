@@ -25,12 +25,7 @@ toc::[]
 
 == Overview
 
-A real time clock keeps track of the current time for a computer. By current time I mean the time on a wall clock. 
-This might seem strange to you since your PC already does that. Don't all computers? The answer is no. If you had experience with earlier desktop computers you may have had to replace the clock battery. That clock was the PC's real time clock.
-
-An RTC keeps time while the computer is not powered. It typically sips power, so that the computer can be unpowered for a long time and when powered on has the correct time.
-
-The RTC modules as used for the Pi (and normal PC) are only used to get the initial time during bootup. It's updated on normal shutdown to take any ntp corrections etc as well.
+A distance sensor 
 
 [NOTE]
 In particular, single board hobby PCs like the Raspberry Pi and Arduino do not include a real time clock. For some applications this is OK. Some features require the current time, such as networking.
@@ -40,13 +35,16 @@ In particular, single board hobby PCs like the Raspberry Pi and Arduino do not i
 
 === Materials
 
-- link:http://smile.amazon.com/JBtek-DS3231-Clock-Module-Raspberry/dp/B00ZOZUTMU[JBtek DS3231 Clock Module for Raspberry Pi]
+* link:https://www.pololu.com/product/2474/[Pololu Carrier with Sharp GP2Y0A60SZLF Analog Distance Sensor 10-150cm, 5V]
 
-- Bread Board and Jumper Wires
+* Bread Board and Jumper Wires
 
-- Raspberry Pi 2 or 3
+* Controler
+** Arduino Uno or 
+** 
+** Raspberry Pi 2 or 3
 
-- 32GB SDCard of Raspberry Pi 2 image.
+* 32GB SDCard of Raspberry Pi 2 image.
 
 === Tools
 
@@ -55,34 +53,24 @@ In particular, single board hobby PCs like the Raspberry Pi and Arduino do not i
 == Datasheet
 A data sheet, for our purposes here, documents in a concise manner the features and capabilities of a component.
 
-This is link:DataSheet/Maxim/DS3231.pdf[the Datasheet for the DS3231].
+This is link:DataSheet/Sharp/gp2y0a60szxf_e.pdf[the Datasheet for the GP2Y0A60SZLF].
 
 
-== Wiring The Electronics
-
-=== Arduino
-
-
-=== Raspberry Pi
+== Concepts
+    
 
 
-
-== Software
-
-=== Arduino
-
-
-=== Raspberry Pi
+== Arduino
+=== Wiring The Electronics
+=== Software
+=== Testing
 
 
 
-== Testing
-
-=== Arduino
-
-
-=== Raspberry Pi
-
+== Raspberry Pi
+=== Wiring The Electronics
+=== Software
+=== Testing
 
 
 
